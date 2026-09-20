@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+  <item><id>1001</id><name>Механическая клавиатура</name><category>Электроника</category><value>2999.90</value><updated_at>2026-01-10</updated_at><active>true</active></item>
+  <item><id>1002</id><name>Беспроводная мышь</name><category>электроника</category><value>1599,50</value><updated_at>11.01.2026</updated_at><active>1</active></item>
+  <item><id>1003</id><name>Монитор 24 дюйма</name><category>ЭЛЕКТРОНИКА</category><value>18490</value><updated_at>2026/01/11</updated_at><active>TRUE</active></item>
+  <item><id>1004</id><name>Кофейная кружка</name><category>Дом</category><value>450.00</value><updated_at>2026-01-12T11:00:00</updated_at><active>да</active></item>
+  <item><id>1005</id><name>Настольная лампа</name><category>дом</category><value>1200</value><updated_at>13.01.2026</updated_at><active>false</active></item>
+  <item><id>1006</id><name>Рюкзак городской</name><category>Аксессуары</category><value>3490.75</value><updated_at>2026-01-14</updated_at><active>0</active></item>
+  <item><id>1007</id><name>Блокнот А5</name><category>канцелярия</category><value>120</value><updated_at>2026-01-15T10:05:00</updated_at><active>yes</active></item>
+  <item><id>1008</id><name>Набор ручек</name><category>Канцелярия</category><value>275.40</value><updated_at>15/01/2026</updated_at><active>no</active></item>
+  <item><id>1009</id><name>USB-C кабель</name><category> Электроника</category><value>890</value><updated_at>2026-01-16</updated_at><active>true</active></item>
+  <item><id>1010</id><name>Портативная колонка</name><category>электроника</category><value>4990</value><updated_at>2026-01-17T12:20:00Z</updated_at><active>1</active></item>
+  <item><id>1011</id><name>Термос</name><category>Дом</category><value>1500.00</value><updated_at></updated_at><active>false</active></item>
+  <item><id>1012</id><name>Книга Python для начинающих</name><category>Книги</category><value>1350</value><updated_at>2026.01.19</updated_at><active>true</active></item>
+  <item><id>1013</id><name>Подставка для ноутбука</name><category>аксессуары</category><value></value><updated_at>2026-01-20</updated_at><active>да</active></item>
+  <item><id>1014</id><name>Чехол для телефона</name><category>Аксессуары</category><value>799.99</value><updated_at>20.01.2026 16:45</updated_at><active>FALSE</active></item>
+  <item><id>1015</id><name>Флеш-накопитель 64GB</name><category>электроника</category><value>999</value><updated_at>2026-01-21</updated_at><active>true</active></item>
+  <item><id></id><name>Органайзер для стола</name><category>Канцелярия</category><value>650</value><updated_at>2026-01-22</updated_at><active>false</active></item>
+  <item><id>001017</id><name>Настенные часы</name><category>Дом</category><value>2100.00</value><updated_at>2026-01-23</updated_at><active>0</active></item>
+  <item><id>1018</id><name>Наушники</name><category>Электроника</category><value>3290,00</value><updated_at>24.01.2026</updated_at><active>1</active></item>
+  <item><id>1019</id><name>Ежедневник</name><category>канцелярия</category><value>540</value><updated_at>2026-01-25</updated_at><active>true</active></item>
+  <item><id>1020</id><name>Сумка для ноутбука</name><category>Аксессуары</category><value>2790</value><updated_at>2026-01-25T13:00:00+03:00</updated_at><active>нет</active></item>
+  <item><id>1021</id><name>Увлажнитель воздуха</name><category>дом</category><value>4590.30</value><updated_at>26.01.2026</updated_at><active>TRUE</active></item>
+  <item><id>1022</id><name>Веб-камера</name><category>Электроника</category><value>2690</value><updated_at>2026-01-27</updated_at><active>false</active></item>
+  <item><id>1005</id><name>Настольная лампа</name><category>Дом</category><value>1200</value><updated_at>2026-01-13T18:00:00Z</updated_at><active>false</active></item>
+  <item><id>1023</id><name>Коврик для мыши</name><category>электроника</category><value>399</value><updated_at>2026-01-28</updated_at><active>true</active></item>
+  <item><id>1026</id><name>Линейка 30 см</name><category>Канцелярия</category><value>75.00</value><updated_at>2026-01-30</updated_at><active>False</active></item>
+</items>
