@@ -16,7 +16,7 @@
   <item><id>1014</id><name>Чехол для телефона</name><category>аксессуары</category><value>799.99</value><updated_at>20.01.2026 16:45</updated_at><active>FALSE</active></item>
   <item><id>1015</id><name>Флеш-накопитель 64GB</name><category>Электроника</category><value>999</value><updated_at>2026-01-21</updated_at><active>true</active></item>
   <item><id></id><name>Органайзер для стола</name><category>Канцелярия</category><value>650</value><updated_at>2026-01-22</updated_at><active>false</active></item>
-  <item><id>001017</id><name>Настенные часы</name><category>Дом</category><value>2100.00</value><updated_at>2026-01-23T19:10:00</updated_at><active>0</active></item>
+  <item><id>1017</id><name>Настенные часы</name><category>Дом</category><value>2100.00</value><updated_at>2026-01-23T19:10:00</updated_at><active>0</active></item>
   <item><id>1018</id><name>Наушники</name><category>Электроника</category><value>3290,00</value><updated_at></updated_at><active>1</active></item>
   <item><id>1019</id><name>Ежедневник</name><category>Канцелярия</category><value>540</value><updated_at>2026-01-25</updated_at><active>true</active></item>
   <item><id>1020</id><name>Сумка для ноутбука</name><category>Аксессуары</category><value>2 790</value><updated_at>25.01.2026</updated_at><active>нет</active></item>

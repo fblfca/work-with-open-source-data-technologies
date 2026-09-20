@@ -16,7 +16,7 @@
     {"id": "1014", "name": "Чехол для телефона", "category": "аксессуары", "value": "799.99", "updated_at": "20.01.2026 16:45", "active": "FALSE"},
     {"id": "1015", "name": "Флеш-накопитель 64GB", "category": "Электроника", "value": "999", "updated_at": "2026-01-21", "active": "true"},
     {"id": "", "name": "Органайзер для стола", "category": "Канцелярия", "value": "650", "updated_at": "2026-01-22", "active": "false"},
-    {"id": "001017", "name": "Настенные часы", "category": "Дом", "value": "2100.00", "updated_at": "2026-01-23T19:10:00", "active": "0"},
+    {"id": "1017", "name": "Настенные часы", "category": "Дом", "value": "2100.00", "updated_at": "2026-01-23T19:10:00", "active": "0"},
     {"id": "1018", "name": "Наушники", "category": "Электроника", "value": "3290,00", "updated_at": "", "active": "1"},
     {"id": "1019", "name": "Ежедневник", "category": "Канцелярия", "value": "540", "updated_at": "2026-01-25", "active": "true"},
     {"id": "1020", "name": "Сумка для ноутбука", "category": "Аксессуары", "value": "2 790", "updated_at": "25.01.2026", "active": "нет"},
