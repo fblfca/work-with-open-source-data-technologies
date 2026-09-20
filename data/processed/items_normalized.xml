@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='utf-8'?>
+<data>
+  <row>
+    <id>1001</id>
+    <name>Механическая клавиатура</name>
+    <category>Электроника</category>
+    <value>2999.9</value>
+    <updated_at>2026-01-10 09:15:00</updated_at>
+    <active>True</active>
+  </row>
+  <row>
+    <id>1002</id>
+    <name>Беспроводная мышь</name>
+    <category>Электроника</category>
+    <value>1599.5</value>
+    <updated_at>2026-01-11 00:00:00</updated_at>
+    <active>True</active>
+  </row>
+  <row>
+    <id>1003</id>
+    <name>Монитор 24 дюйма</name>
+    <category>Электроника</category>
+    <value>18490.0</value>
+    <updated_at>2026-01-11 14:30:00</updated_at>
+    <active>True</active>
+  </row>
+  <row>
+    <id>1004</id>
+    <name>Кофейная кружка</name>
+    <category>Дом</category>
+    <value>450.0</value>
+    <updated_at>2026-01-12 00:00:00</updated_at>
+    <active>True</active>
+  </row>
+  <row>
+    <id>1005</id>
+    <name>Настольная лампа</name>
+    <category>Дом</category>
+    <value>1200.0</value>
+    <updated_at>2026-01-13 21:00:00</updated_at>
+    <active>False</active>
+  </row>
+  <row>
+    <id>1006</id>
+    <name>Рюкзак городской</name>
+    <category>Аксессуары</category>
+    <value>3490.75</value>
+    <updated_at>2026-01-14 00:00:00</updated_at>
+    <active>False</active>
+  </row>
+  <row>
+    <id>1007</id>
+    <name>Блокнот А5</name>
+    <category>Канцелярия</category>
+    <value>120.0</value>
+    <updated_at>2026-01-15 10:05:00</updated_at>
+    <active>True</active>
+  </row>
+  <row>
+    <id>1008</id>
+    <name>Набор ручек</name>
+    <category>Канцелярия</category>
+    <value>275.4</value>
+    <updated_at>2026-01-15 00:00:00</updated_at>
+    <active>False</active>
+  </row>
+  <row>
+    <id>1009</id>
+    <name>USB-C кабель</name>
+    <category>Электроника</category>
+    <value>890.0</value>
+    <updated_at>2026-01-16 00:00:00</updated_at>
+    <active>True</active>
+  </row>
+  <row>
+    <id>1010</id>
+    <name>Портативная колонка</name>
+    <category>Электроника</category>
+    <value/>
+    <updated_at>2026-01-17 12:20:00</updated_at>
+    <active>True</active>
+  </row>
+  <row>
+    <id>1011</id>
+    <name>Термос</name>
+    <category>Дом</category>
+    <value>1500.0</value>
+    <updated_at>2026-01-18 00:00:00</updated_at>
+    <active>False</active>
+  </row>
+  <row>
+    <id>1012</id>
+    <name>Книга Python для начинающих</name>
+    <category>Книги</category>
+    <value>1350.0</value>
+    <updated_at>2026-01-19 00:00:00</updated_at>
+    <active>True</active>
+  </row>
+  <row>
+    <id>1013</id>
+    <name>Подставка для ноутбука</name>
+    <category>Аксессуары</category>
+    <value/>
+    <updated_at>2026-01-20 08:00:00</updated_at>
+    <active>True</active>
+  </row>
+  <row>
+    <id>1014</id>
+    <name>Чехол для телефона</name>
+    <category>Аксессуары</category>
+    <value>799.99</value>
+    <updated_at>2026-01-20 16:45:00</updated_at>
+    <active>False</active>
+  </row>
+  <row>
+    <id>1015</id>
+    <name>Флеш-накопитель 64GB</name>
+    <category>Электроника</category>
+    <value>999.0</value>
+    <updated_at>2026-01-21 00:00:00</updated_at>
+    <active>True</active>
+  </row>
+  <row>
+    <id/>
+    <name>Органайзер для стола</name>
+    <category>Канцелярия</category>
+    <value>650.0</value>
+    <updated_at>2026-01-22 00:00:00</updated_at>
+    <active>False</active>
+  </row>
+  <row>
+    <id>1017</id>
+    <name>Настенные часы</name>
+    <category>Дом</category>
+    <value>2100.0</value>
+    <updated_at>2026-01-23 19:10:00</updated_at>
+    <active>False</active>
+  </row>
+  <row>
+    <id>1018</id>
+    <name>Наушники</name>
+    <category>Электроника</category>
+    <value>3290.0</value>
+    <updated_at/>
+    <active>True</active>
+  </row>
+  <row>
+    <id>1019</id>
+    <name>Ежедневник</name>
+    <category>Канцелярия</category>
+    <value>540.0</value>
+    <updated_at>2026-01-25 00:00:00</updated_at>
+    <active>True</active>
+  </row>
+  <row>
+    <id>1020</id>
+    <name>Сумка для ноутбука</name>
+    <category>Аксессуары</category>
+    <value/>
+    <updated_at>2026-01-25 00:00:00</updated_at>
+    <active>False</active>
+  </row>
+  <row>
+    <id>1021</id>
+    <name>Увлажнитель воздуха</name>
+    <category>Дом</category>
+    <value>4590.3</value>
+    <updated_at>2026-01-26 07:35:00</updated_at>
+    <active>True</active>
+  </row>
+  <row>
+    <id>1022</id>
+    <name>Веб-камера</name>
+    <category>Электроника</category>
+    <value>2690.0</value>
+    <updated_at>2026-01-27 00:00:00</updated_at>
+    <active>False</active>
+  </row>
+  <row>
+    <id>1023</id>
+    <name>Коврик для мыши</name>
+    <category>Электроника</category>
+    <value>399.0</value>
+    <updated_at>2026-01-28 00:00:00</updated_at>
+    <active>True</active>
+  </row>
+  <row>
+    <id>1024</id>
+    <name>Карандаш механический</name>
+    <category>Канцелярия</category>
+    <value>85.0</value>
+    <updated_at>2026-01-29 00:00:00</updated_at>
+    <active>False</active>
+  </row>
+</data>
