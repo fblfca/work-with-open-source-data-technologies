@@ -11,6 +11,7 @@ from typing import Optional
 
 import pandas as pd
 from fastapi import FastAPI, HTTPException, Response, status
+from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 
 
@@ -177,6 +178,124 @@ async def slow_response(delay: float = 2.0) -> dict:
     # requests.exceptions.Timeout без зависимости от внешних сайтов.
     await asyncio.sleep(delay)
     return {'delay_seconds': delay, 'status': 'completed'}
+
+
+@app.get('/dynamic', response_class=HTMLResponse)
+def dynamic_page() -> str:
+    """Возвращает страницу, которую JavaScript заполняет только после клика.
+
+    В исходном HTML нет строк таблицы. Поэтому requests.get('/dynamic') увидит
+    только шаблон страницы, а Selenium после выполнения JavaScript — сами данные.
+    """
+
+    return """
+    <!doctype html>
+    <html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <title>Динамическая таблица объектов</title>
+      <style>
+        body { font-family: Arial, sans-serif; margin: 2rem; color: #222; }
+        button, select { font-size: 1rem; padding: .45rem .7rem; margin-right: .5rem; }
+        #status { display: inline-block; margin: .75rem 0; min-height: 1.2rem; }
+        table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+        th, td { border: 1px solid #bbb; padding: .5rem; text-align: left; }
+        th { background: #f2f2f2; }
+      </style>
+    </head>
+    <body>
+      <h1>Объекты из REST API</h1>
+      <p>Нажмите кнопку: данные будут загружены JavaScript-запросом к API.</p>
+
+      <button id="load-data" type="button">Загрузить данные</button>
+      <label for="category-filter">Категория:</label>
+      <select id="category-filter" disabled>
+        <option value="">Все категории</option>
+      </select>
+      <div id="status" data-state="idle">Данные ещё не загружены</div>
+
+      <table id="items-table">
+        <thead>
+          <tr>
+            <th data-field="id">id</th>
+            <th data-field="name">name</th>
+            <th data-field="category">category</th>
+            <th data-field="value">value</th>
+            <th data-field="updated_at">updated_at</th>
+            <th data-field="active">active</th>
+          </tr>
+        </thead>
+        <tbody id="items-body"></tbody>
+      </table>
+
+      <script>
+        const loadButton = document.getElementById('load-data');
+        const filter = document.getElementById('category-filter');
+        const tableBody = document.getElementById('items-body');
+        const status = document.getElementById('status');
+        let allItems = [];
+
+        function displayValue(value) {
+          return value === null || value === undefined ? '' : String(value);
+        }
+
+        function renderRows() {
+          const selectedCategory = filter.value;
+          const visibleItems = selectedCategory
+            ? allItems.filter(item => item.category === selectedCategory)
+            : allItems;
+
+          tableBody.replaceChildren();
+
+          for (const item of visibleItems) {
+            const row = document.createElement('tr');
+            for (const field of ['id', 'name', 'category', 'value', 'updated_at', 'active']) {
+              const cell = document.createElement('td');
+              cell.textContent = displayValue(item[field]);
+              row.appendChild(cell);
+            }
+            tableBody.appendChild(row);
+          }
+
+          status.textContent = `Показано записей: ${visibleItems.length}`;
+          status.dataset.state = 'loaded';
+        }
+
+        function fillCategoryFilter() {
+          const categories = [...new Set(allItems.map(item => item.category))].sort();
+          filter.replaceChildren(new Option('Все категории', ''));
+          for (const category of categories) {
+            filter.appendChild(new Option(category, category));
+          }
+          filter.disabled = false;
+        }
+
+        loadButton.addEventListener('click', async () => {
+          loadButton.disabled = true;
+          status.textContent = 'Загрузка данных...';
+          status.dataset.state = 'loading';
+
+          try {
+            const response = await fetch('/api/items');
+            if (!response.ok) {
+              throw new Error(`HTTP ${response.status}`);
+            }
+
+            allItems = await response.json();
+            fillCategoryFilter();
+            renderRows();
+          } catch (error) {
+            status.textContent = `Ошибка загрузки: ${error.message}`;
+            status.dataset.state = 'error';
+            loadButton.disabled = false;
+          }
+        });
+
+        filter.addEventListener('change', renderRows);
+      </script>
+    </body>
+    </html>
+    """
 
 
 @app.post('/api/items', response_model=Item, status_code=status.HTTP_201_CREATED)
