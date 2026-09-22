@@ -121,14 +121,6 @@
     <active>True</active>
   </row>
   <row>
-    <id/>
-    <name>Органайзер для стола</name>
-    <category>Канцелярия</category>
-    <value>650.0</value>
-    <updated_at>2026-01-22 00:00:00</updated_at>
-    <active>False</active>
-  </row>
-  <row>
     <id>1017</id>
     <name>Настенные часы</name>
     <category>Дом</category>
